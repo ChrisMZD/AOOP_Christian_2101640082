@@ -4,13 +4,17 @@ public class Anjing extends Hewan{
 	
 	private String suaraGonggong;
 	
-	public Anjing() {
-		super("tes");
+	public Anjing() {}
+	public Anjing(String nama, float lifeSpan, String suaraGonggong) {
+		super();
+		this.suaraGonggong = suaraGonggong;
 	}
+	
 	@Override
 	public void bernafas() {
 		System.out.println("Bernafas dengan paru-paru");
 	}
+	
 	@Override
 	public void jenis() {
 		System.out.println("Pomeranian");
