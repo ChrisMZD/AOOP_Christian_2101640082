@@ -1,24 +1,27 @@
 package animal;
 
 public abstract class Hewan {
-	private int masaHidup;
-	private String nama;
+	protected float lifeSpan;
+	protected String name;
+
 	public abstract void bernafas();
 	public abstract void jenis();
 	
-	public Hewan(String nama) {
-		
+	public Hewan(){}
+	public Hewan(String name, Integer lifespan) {
+		this.name = name;
+		this.lifeSpan = lifespan;
 	}
-	public int getMasaHidup() {
-		return masaHidup;
+	public float getMasaHidup() {
+		return lifeSpan;
 	}
-	public void setMasaHidup(int masaHidup) {
-		this.masaHidup = masaHidup;
+	public void setMasaHidup(int lifeSpan) {
+		this.lifeSpan = lifeSpan;
 	}
 	public String getNama() {
-		return nama;
+		return name;
 	}
 	public void setNama(String nama) {
-		this.nama = nama;
+		this.name = nama;
 	}
 }
