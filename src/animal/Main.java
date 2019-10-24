@@ -1,14 +1,21 @@
 package animal;
 
+import java.util.Scanner;
+
 public class Main {
+	
+	private static final Scanner scan = new Scanner(System.in);
+	
 	public Main() {
-		String s1 = "",s2 = "";
-		float f = 0;
-		Anjing a1 = new Anjing(s1, f ,s2);
-		a1.setNama("Tes");
-		a1.setMasaHidup(10);
-		a1.setSuaraGonggong("Guk");
-		System.out.println(a1);
+		String name = scan.nextLine();
+		int lifeSpan = scan.nextInt();
+		scan.nextLine();
+		Hewan kucing = new Kucing(name, lifeSpan);
+		kucing.setNama(name);
+		kucing.setMasaHidup(10);
+		System.out.println(kucing.getNama());
+		System.out.println(kucing.getMasaHidup());
+		
 	}
 	public static void main(String[] args) {
 		new Main();

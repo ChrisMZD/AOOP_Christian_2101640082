@@ -9,15 +9,30 @@ public class Ikan extends Hewan{
 		super();
 		this.howToBirth = birth;
 	}
+	
+	//Interface
 	@Override
-	public void bernafas() {
-		System.out.println("Bernafas dengan insang");
+	public void move() {
+		System.out.println("Move with Swimming");
+	}
+	
+	//Abstract Class
+	@Override
+	public void howToBirth() {
+		System.out.println("Ovipar");
+	}
+	@Override
+	public void breathWith() {
+		System.out.println("Breath with Gill");
 		
 	}
 	@Override
-	public void jenis() {
-		System.out.println("Ikan Mas");
+	public void type() {
+		System.out.println("Catfish");
 	}
+	
+	
+	//Setter and Getter
 	public String getHowToBirth() {
 		return howToBirth;
 	}
